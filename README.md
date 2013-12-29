@@ -14,7 +14,7 @@ The Rabin-Karp Algorithm is an implementation of exact string matching that uses
 
 The Rabin-Karp algorithm is used in detecting plagiarism because given a pattern and a source of texts, the algorithm can quickly search through papers for patterns from the source material.
 
-In this project, we implement serial and parallel versions of the Rabin-Karp algorithm, loosely based on the paper: "Parallelized Rabin-Karp Method for Exact String Matching" by Brodanac, P. Budin, L, Jakobovic, D. <http://ieeexplore.ieee.org/xpl/abstractAuthors.jsp?arnumber=5974088>, and we explore different methods of parallelizing the Rabin-Karp algorithm and analyze our findings here.
+In this project, we implement serial and parallel versions of the Rabin-Karp algorithm, loosely based on the paper: "Parallelized Rabin-Karp Method for Exact String Matching" by Brodanac, P. Budin, L, Jakobovic, D. <http://ieeexplore.ieee.org/xpl/abstractAuthors.jsp?arnumber=5974088>, and we explore different methods of parallelizing the Rabin-Karp algorithm and analyze our findings here: http://people.seas.harvard.edu/~pwwang/index.html
 
 ###Approaches: ###
 There are a number of approaches to parallelizing the Rabin-Karp algorithm that we will design and analyze. We can divide the corpus of texts, and/or the pattern among processes and run the algorithm on the corpus in real-time (with the rolling hash) or preprocessed. Inspired by the original Rabin-Karp algorithm, we implement the serial and parallel versions as well as attempt our own parallel version using prehashed corpuses.
